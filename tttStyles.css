@@ -1,0 +1,120 @@
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            gap:3rem;
+            display: grid;
+            grid-template-rows: repeat(1,1fr);
+            justify-content: center;
+            align-items: center;
+            background-color: #0a0519;
+            min-height: 100vh;
+            color: beige;
+        }
+
+        .activePlayers{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 2rem;
+            gap:15px;
+        }
+        .container{
+            display: grid;
+            justify-content: center;
+            align-items: center; 
+            grid-template-columns: repeat(3,100px);
+
+            gap:10px;
+        }
+
+        .box, .player {
+            height: 100px;
+            width:100px;
+            font-size: 2.3rem;
+            font-weight: bold;
+            border-radius: 14px;
+            opacity: 0.5;
+            color: beige;
+            align-items: center;
+            justify-items: center;
+            cursor: pointer;
+        }
+
+
+        .reset{
+            padding: 7px;
+            width: 7rem;
+            font-size: 1rem;
+            justify-self: center;
+            margin-bottom: 3rem;
+            border-radius: 5px;   
+            color: beige;        
+            cursor: pointer;
+        }
+
+        .reset, .box, .player{
+            background-color: #17122a;
+            border: solid 4px #261f41;
+        }
+
+        .player{
+            opacity: 1;
+            border: solid 4px #362f50;
+        }
+        .xActive{
+            color: #1892ea;
+        }
+
+        .oActive{
+            color: #a737ff;
+        }
+
+        .box:hover{
+            border: solid 4px #3a315d;
+        }
+
+        .banner {
+    position: fixed;
+    /* important trio */
+    top: 50%;                               
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 500px;
+    z-index: 100;
+    background: linear-gradient(to right,#271539,#501f5a,#915ba4);
+    box-shadow: solid 0 8px 8px #0a0519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: beige;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/*
+        .banner{
+            height: 150px;
+            width:500px;
+            z-index: 100;
+            background:linear-gradient(to right, #271539,#501f5a,#915ba4, #974e79);
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 2rem;
+            top:50%;
+            transform: translateY(-50%);
+            transition: opacity ease 0.2s;
+        }
+*/
