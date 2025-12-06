@@ -21,6 +21,7 @@
         //Winner
         function checkWinner(){
             for (let pattern of winningP){
+                console.log(pattern[1])
                 // pattern[1] gives me index (here, 1). boxes[pattern[1]] returns the box at index 1. boxes.[pattern[1]].innerText
                 // returns the values inside the box at index 1
                 let pos1val = boxes[pattern[0]].innerText;
