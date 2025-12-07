@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link href="rockPaperScissors.css" rel="stylesheet">
+
 </head>
 <body>
-    <p>Hllo</p>
+    <h2 class="heading">Rock Paper Scissors</h2>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="images/rock.png" alt="Rock hand gesture"/>
+        </div>
+        <div class="choice" id="paper">
+            <img src="images/paper.png" alt="Paper hand gesture"/>
+        </div>
+        <div class="choice" id="scissors">
+            <img src="images/scissors.png" alt="Scissors hand gesture"/>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="scoreBoard">
+            <div class="score">
+                <p id="user-score">N</p>
+                <p>You</p>
+            </div>
+            <div class="score">
+                <p id="comp-score">N</p>
+                <p>Computer</p>
+            </div>        
+        </div>
+        <div class="mssg-box">
+            <p id="mssg">Make your move</p>
+        </div>
+    </div>
+
 </body>
 </html>
