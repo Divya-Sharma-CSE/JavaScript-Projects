@@ -5,7 +5,7 @@
 
 
 .heading{
-    height:15vh ; 
+    height:12vh ; 
     width: 100%;
     background-color: rgb(33, 26, 78);
     color:blanchedalmond;
@@ -18,7 +18,7 @@
 .choices{
     display: flex;
     flex-direction: row;
-    gap:3rem;
+    gap:2.5rem;
     justify-content: center;
     margin-top:7rem;
 }
@@ -47,5 +47,38 @@
 .scoreBoard{
     display: flex;
     flex-direction: row;
-    gap:7rem;
+    gap:5rem;
+
+}
+
+#Cplayer{
+    height: 40px;
+    width: 100px;
+    border-right: solid 6px yellow;
+    background-color:rgb(33, 26, 78) ;
+    align-content: center;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 1.2rem;
+}
+
+#Uplayer{
+    height: 40px;
+    width:100px;
+    border-left: solid 6px red;
+    background-color: rgb(33, 26, 78);
+    align-content: center;
+    text-align: center;
+    color:blanchedalmond;
+    font-size: 1.2rem;
+}
+
+#comp-score, #user-score{
+    margin-bottom: 1rem;
+    font-size:2rem;
+    text-align: center;
+}
+
+#mssg{
+    font-size: 2rem;
 }
