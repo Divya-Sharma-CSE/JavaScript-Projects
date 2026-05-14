@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.mainScreen{
+    background-color: #E5C5C1;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+
+.navbar{
+    background-color: #F4E1E0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    color: #0E1627;
+    /* width:3fr; */
+    position: fixed;
+    z-index: 10;
+}
+
+.navbarMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+    /* border-right: 5px dashed #ba8781; */
+}
+
+.navbarMenu::after{
+    content: "";
+    position: absolute;
+    align-self: center;
+    top: 10px;
+    right: 5px;   /* shift from right wall */
+    height: calc(100% - 20px);
+    border-right: 4px dashed #ba8781;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.navbar a, .hide{
+    padding: 10px;
+    text-decoration: none;
+    color: #0E1627;
+}
+
+.logo{
+    height: 150px;
+    width:150px;
+}
+
+.options, .hide{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Shadows Into Light Two", cursive;
+}
+
+.hide{
+    font-size: 20px;
+    margin: 0 0 20px 20px;
+}
+
+
